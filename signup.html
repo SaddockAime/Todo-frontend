@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Todo app">
+  <meta name="author" content="Saddock Kabandana">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/signup.css">
+  <title>users</title>
+</head>
+<body>
+    
+    <!-- ***********************signup************************************ -->
+    <main>
+    <div class="signupInfo">
+        <div class="signInfo">
+            <form class="signform" id="signUp">
+                <p>Signup</p>
+            <div class="signupfield">
+            <label>Username</label> 
+            <input type="text" id="username" placeholder="your name">
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error</small>
+            </div>
+            <div class="signupfield">
+            <label>Email</label> 
+            <input type="email" id="email" placeholder="enter your email">
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error</small>
+            </div>
+            <div class="signupfield">
+            <label>Password</label> 
+            <input type="text" id="password" placeholder="********************">
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error</small>
+            </div>
+            
+            <div><button type="submit" class="signBut">Signup</button></div>
+            </form>
+        </div>
+        <div class="orlogin">
+            <p>Already have an account? <a href="signin.html">Login</a></p>
+        </div>
+        <div id="message"></div>
+    </div>
+    </main>
+
+    <script src="./javascript/signup.js"></script>
+</body>
+</html>
