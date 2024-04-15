@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #161616;
+}
+
+/* *********************************loginform******************************** */
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.loginInfo{
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    text-align: center;   
+}
+.addInfo{
+    margin: auto;
+    text-align: left;
+}
+.addform{
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 420px;
+    height: 310px;
+    border-radius: 30px;
+    padding-top: 20px;
+}
+.addform p{
+    color: #E4A707;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.loginfield{
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    justify-content: center;
+    text-align: left;
+}
+.loginfield label{
+    display: inline-block;
+    margin-bottom: 3px;
+    font-size: 20px;
+}
+.loginfield input{
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    display: block;
+    width: 80%;
+    font-size: 15px;
+    padding: 5px 0 5px 5px;
+}
+.loginfield i{
+    position: absolute;
+    top: 33px;
+    right: 75px;
+    color: green;
+    visibility: hidden;
+    
+}
+.loginfield small{
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+.loginfield.success input{
+    border-color: green;
+}
+.loginfield.error input{
+    border-color: red;
+}
+.loginfield.success i.fa-check-circle{
+    visibility: visible;
+}
+.loginfield.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: red;
+}
+.loginfield.error small{
+    visibility: visible;
+    color: red;
+}
+
+.loginBut{
+    padding: 6px 25px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 160px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    background-color:  #E4A707;
+}
+.orsignup{
+    font-size: 23px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.orsignup a{
+    text-decoration: none;
+    color: #E4A707;
+}
+
