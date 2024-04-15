@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="description" content="Todo app">
+  <meta name="author" content="Saddock Kabandana">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/signin.css">
+  <title>users</title>
+</head>
+<body>
+    
+     <!-- *********************************loginform********************************  -->
+    <main>
+    <div class="loginInfo">
+        <div class="addInfo">
+            <form class="addform" id="signIn">
+                <p>Login</p>
+            <div class="loginfield">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="enter your email">
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error</small>
+            </div>
+            <div class="loginfield">
+            <label>Password</label>
+            <input type="text" id="password" placeholder="***************">
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error</small>
+            </div>
+            
+            <div><button type="submit" class="loginBut">Login</button></div>
+            </form>
+        </div>
+        <div class="orsignup">
+            <p>Don't have an account? <a href="signup.html">Signup</a></p>
+        </div>
+        <div id="message"></div>
+    </div>
+    </main>
+
+    <script src="./javascript/signin.js"></script>
+</body>
+</html>
