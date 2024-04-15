@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.container{
+  max-width: 900px;
+  width: 100%;
+  margin: 0 20px;
+}
+
+.container h1{
+  padding: 2rem 1rem;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #E4A707;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background: #000000;
+}
+.table thead tr th{
+  font-size: 0.9rem;
+  padding: 0.8rem;
+}
+.table thead tr th:nth-child(1){
+  text-align: left;
+  border-top-left-radius: 10px;
+}
+.table thead tr th:nth-child(4){
+  text-align: right;
+  border-top-right-radius: 10px;
+}
+
+.table tbody tr td {
+  font-size: 1rem;
+  padding: 0.8rem;
+  text-align: center;
+}
+.table tbody tr td:nth-child(1){
+    text-align: left;
+}
+.table tbody tr td:nth-child(4){
+  text-align: right;
+}
+
+.table tbody tr td button{
+  padding: 0.4rem;
+  margin-left: 1.2rem;
+  cursor: pointer;
+}
