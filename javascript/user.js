@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
   document.addEventListener("click", (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     
     if (e.target && e.target.id === "deleteUser") {
       deleteUser(e);
