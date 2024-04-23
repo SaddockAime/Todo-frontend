@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="My personal webpage">
-  <meta name="author" content="Saddock Kabandana">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/index.css">
-  <title>Todo app</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="My personal webpage">
+    <meta name="author" content="Saddock Kabandana">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Todo tasks</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-  <div class="container">
-    <div class="table-container">
-    <h1>TODO TASKS</h1>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Tasks</th>
-          <th>View</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Users Page</td>
-          <td>
-            <i class="fa fa-solid fa-eye" id="editUsers"></i>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  </div>
-  <script src="./javascript/index.js"></script>
+    <div class="main">
+        <div class="table-container">
+            <h1>TODO TASKS</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Saddock Kabandana</td>
+                        <td>Saddock@gmail.com</td>
+                        <td>ekmfqwmfqkmfkemfkqemfkqwlmfekfmeqfknekmfqkeckqcewfefewfewfwehf</td>
+                        <td>
+                          <button class="button-edit" id="editMessage"><i class="fa fa-solid fa-pencil"></i></button>
+                          <button class="button-trash" id="deleteMessage"><i class="fa fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+                  </table>
+                  <a ><button class="newUser" type="submit" onclick="showAdd()">Add Task</button></a>
+                  <a ><button class="newUser" type="submit" onclick="cancelAdd()">Cancel</button></a>      
+        </div>
+
+        <div class="contactInfo" id="addForm">
+              <div class="addform">
+                  <form class="add" id="form">
+                      <p class="contactIntro1">Add Task</p>
+                  <div class="formfield">        
+                  <label>Name</label>
+                  <input type="text" id="name" placeholder="Enter your name">
+                  <small>Error</small>
+                  </div>
+                  <div class="formfield">
+                  <label>Email</label>
+                  <input type="email" id="email" placeholder="Enter your email">
+                  <small>Error</small>
+                  </div>
+                  <div class="formfield">
+                  <label>Message</label>
+                  <textarea type="text" id="text" placeholder="Enter your message"></textarea>
+                  <small>Error</small>
+                  </div>
+                  <div><button type="submit" id="send" class="button">Send</button> </div>
+                  </form>
+              </div>
+        </div>
+        <a href="signin.html" class="signout">SignOut</a>
+    </div>
+        
+    <script src="./javascript/index.js"></script>
 </body>
 </html>

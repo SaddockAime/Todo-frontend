@@ -33,13 +33,13 @@ signIn.addEventListener("submit", async (e) => {
           body: JSON.stringify(formData)
         });
   
-        const data = await response.json();
-        messageDiv.textContent = data.message;
-  
-        if (response.status === 200) {
-          // Save JWT token in localStorage and redirect to home page
-          localStorage.setItem('token', data.token);
-          window.location.href = 'index.html';
+        const responseData = await response.json();
+        messageDiv.textContent = responseData.message;
+        if (response.ok) {
+          const token = responseData.data.token;
+          localStorage.setItem('token',token);
+          //console.log(token);
+         window.location.href = 'index.html';
         }
       } catch (error) {
         console.error('Error', error);

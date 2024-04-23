@@ -14,53 +14,186 @@ body {
   min-height: 100vh;
   color: #fff;
 }
-
-.container{
-  max-width: 900px;
-  width: 100%;
-  margin: 0 20px;
+.main{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 20px;
 }
+.main h1{
+    padding: 2rem 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #E4A707;
+  }
+  .signout{
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #E4A707;
+    text-decoration: none;
+  }
+.table-container{
+    color: #FFFFFF;
 
-.container h1{
-  padding: 2rem 1rem;
-  font-size: 2.5rem;
-  text-align: center;
-  color: #E4A707;
 }
 .table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
+    width: 100%;
+    border-collapse: collapse;
+  }
 .table thead {
-  background: #000000;
-}
+    background: #000000;
+  }
 .table thead tr th{
-  font-size: 0.9rem;
-  padding: 0.8rem;
-}
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
 .table thead tr th:nth-child(1){
-  text-align: left;
-  border-top-left-radius: 10px;
-}
-.table thead tr th:nth-child(2){
-  text-align: right;
-  border-top-right-radius: 10px;
-}
-
+    text-align: left;
+    border-top-left-radius: 10px;
+  }
+.table thead tr th:nth-child(5){
+    text-align: right;
+    border-top-right-radius: 10px;
+  }
+  
 .table tbody tr td {
-  font-size: 1rem;
-  padding: 0.8rem;
+    font-size: 1rem;
+    padding: 0.8rem;
+    text-align: center;
+  }
+  .table tbody tr td:nth-child(1){
+      text-align: left;
+  }
+  .table tbody tr td:nth-child(5){
+    text-align: right;
+    display: flex;
+  }
+  
+  .table tbody tr td:nth-child(4){
+    text-align: center;
+    max-width: 30vw !important;
+    white-space: normal;
+    word-wrap: break-word;
+  } 
+  
+  .table tbody tr td button{
+    padding: 0.4rem;
+    margin-left: 1.2rem;
+    cursor: pointer;
+  }
+  .newUser{
+    margin-top: 40px;
+    cursor: pointer;
+  }
+.container a{
+  padding: 2rem 1rem;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 }
-.table tbody tr td:nth-child(2){
-  text-align: right;
+.container a button{
+  font-size: 1.2rem;
 }
 
-.table tbody tr td button{
-  cursor: pointer;
+
+.contactInfo{
+  position: relative;
+  flex: 1;
+  justify-content: center;
+  margin-top: 50px;
+  display: none;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
 }
-.table tbody tr td i{
-  font-size: x-large;
-  cursor: pointer;
-  color:#fff;
+.addform{
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
+.add{
+  background-color: #000000;
+  color: #FFFFFF;
+  width: 450px;
+  height: 450px;
+  padding-top: 20px;
+  padding-left: 30px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.contactIntro1{
+  color: #E4A707;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.formfield{
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  justify-content: center;
+  margin-left: 50px;
+  text-align: left;
+}
+.formfield label{
+  display: inline-block;
+  margin-bottom: 3px;
+  font-size: 20px;
+}
+.formfield input{
+  border: none;
+  border-bottom: 1px solid #D9D9D9;
+  display: block;
+  width: 80%;
+  font-size: 15px;
+  padding: 5px 0 5px 5px;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.formfield textarea{
+  border: none;
+  border-bottom: 1px solid #D9D9D9;
+  display: block;
+  width: 80%;
+  height: 60px;
+  font-size: 15px;
+  padding: 5px 0 5px 5px;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.formfield.success input{
+  border-color: #E4A707;
+}
+.formfield.success textarea{
+  border-color: #E4A707;
+}
+.formfield.error input{
+  border-color: rgb(210, 4, 4);
+}
+.formfield.error textarea{
+  border-color: rgb(210, 4, 4);
+}
+.formfield.error small{
+  visibility: visible;
+  color: rgb(210, 4, 4);
+}
+.formfield small{
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.button{
+  padding: 6px 25px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  color: #000000;
+  background-color: #E4A707;
 }
